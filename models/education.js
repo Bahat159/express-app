@@ -2,6 +2,7 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 const UserEducationSchema = new Schema({
+  fullname: { type: String, required: true },
   primary_school_name: { type: String, required: true },
   primary_school_state: { type: String, required: true },
   primary_school_city: { type: String, required: true },
