@@ -8,4 +8,4 @@ const UserSibling = new Schema({
   sex: { type: String, required: true },
 });
 
-module.exports = mongoose.model("Sibling", UserSibling);
+module.exports = mongoose.model("Siblings", UserSibling);
