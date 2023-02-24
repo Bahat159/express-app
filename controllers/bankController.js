@@ -1,9 +1,8 @@
-var bankInfo = require("../models/user-bank-model");
+var bankInfo = require("../models/bank");
 var async = require("async");
 
-const { body, validationResult } = require("express-validator");
 
-exports.banks_list = function (req, res, next)  {
+exports.bank_list = function (req, res, next)  {
     bankInfo.find()
     .sort([["bank_name", "ascending"]])
     .exec(function (err, bank_list) {
